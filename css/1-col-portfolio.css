@@ -2,6 +2,8 @@
 body {
 	margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
   background: url("/images/crossword.png");
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
 }
 
 footer {
