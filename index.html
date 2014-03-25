@@ -33,15 +33,23 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://projects.ljungblad.nu">MLjungblad</a>
+                <a class="navbar-brand" href="http://projects.ljungblad.nu">Project portfolio</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#aboutme">About</a>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#project-elis">Elis Platform</a></li>
+                        <li><a href="#project-raft">Raft in Scala/Akka</a></li>
+                        <li><a href="#project-inductive">Inductive graphs</a></li>
+                        <li><a href="#project-mapi">MAPI</a></li>
+                        <li><a href="#project-thesis">Thesis project</a></li>
+                      </ul>
                     </li>
-                    <li><a href="#services">Blog</a>
+                    <li><a href="#aboutme">About</a>
                     </li>
                     <li><a href="#contact">Contact</a>
                     </li>
@@ -55,44 +63,44 @@
     <div class="container">
 
         <div class="row">
-
+          <span id="project-elis" class="anchor"></span>
             <div class="col-lg-12">
-                <h1 class="page-header">Project Portfolio
-                    <small>A selection of not-so-random bits</small>
+                <h1 class="page-header">A selection of not-so-random bits
+                    <small>by Marcus Ljungblad</small>
                 </h1>
             </div>
-
         </div>
 
         <div class="row">
 
             <div class="col-lg-7 col-md-7">
                 <a href="#">
-                    <img class="img-responsive img-rounded" src="http://placehold.it/700x500" alt="">
+                    <img class="img-responsive img-rounded" src="images/elis-mock-cropped.png" alt="">
                 </a>
             </div>
 
             <div class="col-lg-5 col-md-5">
                 <h3>The Elis Platform</h3>
                 <h4>Mobile services for energy efficiency</h4>
-                <p>This project focuses on exploring the potential of mobile services on mobile devices (e.g. smart phones and tablets) to promote energy efficiency in existing buildings. I lead the software development work on a platform that integrates existing technologies from a number of companies including E.On and Schneider-Electric.</p>
+                <p>This project focuses on exploring the potential of mobile services on mobile devices (e.g. smart phones and tablets) to promote energy efficiency in existing buildings. I led the software development work on a platform that integrates existing technologies from a number of companies including E.On and Schneider-Electric.</p>
 
                 <p>The platform is developed in Java using the OSGI framework for module composition. It exposes a HTTP API which 3rd-party developers can use to develop services for energy efficiency. What’s special about the API is that it integrates data from multiple providers and makes it easier to use through useful abstractions. </p>
 
-                <p>In the future, hopefully the project will be released as open source, but as of now it is not. The project is jointly run by Malmö University, Lund University, and Blekinge Tekniska Högskola and 11 more companies located in southern Sweden.</p>
+                <p>In the future, hopefully the project will be released as open source, but as of now it is not. The project is run by Malmö University, Lund University, and Blekinge Tekniska Högskola together with several companies in southern Sweden.</p>
 
-                <a class="btn btn-primary" href="#">Project Website<span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="http://elis.mah.se">Project Website<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
 
         </div>
 
         <hr>
+        <span id="project-raft" class="anchor"></span>
 
         <div class="row">
 
-            <div class="col-lg-7 col-md-7">
+            <div class="col-lg-7 col-md-7 project-margin-offset">
                 <a href="#">
-                    <img class="img-responsive img-rounded" src="http://placehold.it/700x300" alt="">
+                    <img class="img-responsive img-rounded" src="images/raft-screenshot.png" alt="Raft tests">
                 </a>
             </div>
 
@@ -109,12 +117,13 @@
         </div>
 
         <hr>
+        <span id="project-inductive" class="anchor"></span>
 
         <div class="row">
 
             <div class="col-lg-7 col-md-7">
                 <a href="#">
-                    <img class="img-responsive img-rounded" src="http://placehold.it/700x300" alt="">
+                    <img class="img-responsive img-rounded" src="images/inductivegraph-screenshot.png" alt="Extract from paper">
                 </a>
             </div>
 
@@ -122,37 +131,41 @@
                 <h3>Inductive graphs in Scala</h3>
                 <h4>An experiment in writing purely functional graphs</h4>
                 <p>This mini-project explored functional data structures and in particular graphs using Scala. The result of the project is an implementation of Inductive Graphs based on <a href="http://web.engr.oregonstate.edu/~erwig/papers/InductiveGraphs_JFP01.pdf" title="Martin Erwig's paper">Martin Erwig's paper</a> which I contributed to an open-source collection of functional data structure implementations called <a href="https://github.com/vkostyukov/scalacaster" title="Scalacaster">Scalacaster</a></p>
+
                 <a class="btn btn-primary" href="https://github.com/vkostyukov/scalacaster">View on Github<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
 
         </div>
 
         <hr>
+        <span id="project-mapi" class="anchor"></span>
 
         <div class="row">
 
-            <div class="col-lg-7 col-md-7">
+            <div class="col-lg-7 col-md-7 project-margin-offset">
                 <a href="#">
-                    <img class="img-responsive img-rounded" src="http://placehold.it/700x300" alt="">
+                    <img class="img-responsive img-rounded" src="images/mapi-screenshot.png" alt="Sample requests to MAPI">
                 </a>
             </div>
 
             <div class="col-lg-5 col-md-5">
                 <h3>MAPI</h3>
                 <h4>Transform those HTTP calls</h4>
-                <p>Mapi is a proxy which transparently maps resources HTTP endpoints to each other. It is a way to modify a part of an existing HTTP api leaving other methods untouched. Moreover, it can be used to extend existing HTTP apis. It uses a simple rule lookup table and is implemented in Node.js.</p>
-                <a class="btn btn-primary" href="#">View on Github<span class="glyphicon glyphicon-chevron-right"></span></a>
+                <p>Mapi is a proxy which lets you selectively intercept and re-route HTTP calls. It is a way to modify a part of an existing HTTP api leaving other methods untouched. I developed the relatively short Node.js script as a way to prototype some modifications we were doing with one of the providers API in the Elis project. For example, MAPI allowed us to inject responses from physical devices that were not available through the provider's API.</p>
+
+                <a class="btn btn-primary" href="https://github.com/archie/mapi-proxy">View on Github<span class="glyphicon glyphicon-chevron-right"></span></a>
             </div>
 
         </div>
 
         <hr>
+        <span id="project-thesis" class="anchor"></span>
 
         <div class="row">
 
             <div class="col-lg-7 col-md-7">
                 <a href="#">
-                    <img class="img-responsive img-rounded" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive img-rounded" src="images/thesis-sequence-screenshot.png" alt="">
                 </a>
             </div>
 
@@ -171,13 +184,14 @@
         </div>
 
         <hr>
+        <span class="anchor" id="aboutme"></span>
 
         <div class="row">
           <div class="col-lg-7 col-md-7 text-left about">
-            <h1 id="aboutme">About Me</h1>
-            <p>I'm a freelance backend developer working mostly in Java, Python, Scala, and Erlang. Occasionally I dabble in other languages and I don't see myself as a "one language to rule them all" type of guy. Writing the juicy details underneath a shiny interface is where I perform best and I feel comfortable debugging code unknown to me or navigating projects with unclear requirements.</p>
+            <h1>About Me</h1>
+            <p>I'm a freelance backend developer working mostly in Java, Python, Scala, and Erlang. Occasionally I dabble in other languages and I don't see myself as a "one language to rule them all" type of guy. I feel comfortable working on the details under a shiny interface all the way up to the API, but I prefer to leave UI/UX work alone. My approach to testing is lean, meaning I usually write a test or two first, and only once a bug report is in place do I expand the test suite to cover more scenarios. Lately I've found an interest in keeping the release cycles as short as possible and thus often tinker with such tools.</p>
 
-            <p>Last fall I attended <a href="http://www.hackerschool.com">Hacker School</a> in New York. An absolutely amazing learning experience that everyone who has a passion for programming should take the opportunity to <a href="http://www.hackerschool.com/apply">apply</a> for. Previous to that I was team lead and software developer at <a href="http://medea.mah.se">Malmo University</a> in a project making an app platform for buildings with focus on saving energy.</p>
+            <p>Last fall I attended <a href="http://www.hackerschool.com">Hacker School</a> in New York. An absolutely amazing learning experience that everyone who has a passion for programming should take the opportunity to <a href="http://www.hackerschool.com/apply">apply</a> for. Previous to that I was team lead and software developer at <a href="http://medea.mah.se">Malmo University</a> making an app platform for buildings with the goal of saving energy.</p>
 
             <p>In 2012, I received a M.Sc. double degree in computer science with a specialisation in <a href="http://www.kth.se/en/studies/programmes/master/em/emdc">distributed computing</a> from KTH (Stockholm) and IST (Lisbon). As my final project I wrote a <a href="http://thesis.ljungblad.nu">thesis</a> and implemented a prototype for scaling recommendation engines at <a href="http://www.tuenti.com">Tuenti</a>.</p>
 
@@ -186,16 +200,20 @@
             <p>Marcus Ljungblad <br> <em>Malmö, Sweden</em></p>
           </div>
 
-          <div class="col-lg-5 col-md-5">
-                <a href="#">
-                    <img class="img-responsive img-rounded" src="http://placehold.it/500x650" alt="">
-                </a>
+          <div class="col-lg-5 col-md-5 project-margin-offset">
+            <div class="media">  
+              <img class="img-responsive img-rounded media-object" src="images/about-me.jpeg" alt="Marcus Ljungblad in Buenes Aires, Argentina">
+              <div class="media-body">
+                <p><em>From a side street in the San Telmo neighbourhood of Buenes Aires, Argentina. Photo by <a href="http://lewertson.tumblr.com/">Lisa Ewertson</a>.</em></p>
+              </div>
             </div>
+          </div>
         </div>
 
         <hr>
+        <span class="anchor" id="contact"></span>
 
-        <div id="contact" class="row text-center about">
+        <div class="row text-center about">
 
           <div class="col-lg-3 col-md-3">
             <p><a href="mailto:marcus@ljungblad.nu">
@@ -208,7 +226,7 @@
           </div>
 
           <div class="col-lg-3 col-md-3">
-            <p><a href="http://github.com">
+            <p><a href="http://github.com/archie">
             <i class="fa fa-github fa-5x"></i><br>Github</a></p>
           </div>
 
