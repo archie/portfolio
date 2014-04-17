@@ -42,6 +42,7 @@
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
                       <ul class="dropdown-menu">
+                        <li><a href="#project-omnilingo">OmniLingo</a></li>
                         <li><a href="#project-elis">Elis Platform</a></li>
                         <li><a href="#project-raft">Raft in Scala/Akka</a></li>
                         <li><a href="#project-inductive">Inductive graphs</a></li>
@@ -63,13 +64,43 @@
     <div class="container">
 
         <div class="row">
-          <span id="project-elis" class="anchor"></span>
+          <span id="project-omnilingo" class="anchor"></span>
             <div class="col-lg-12">
                 <h1 class="page-header">A selection of not-so-random bits
                     <small>by Marcus Ljungblad</small>
                 </h1>
             </div>
         </div>
+
+        <div class="row">
+
+            <div class="col-lg-7 col-md-7">
+                <a href="#">
+                    <img class="img-responsive img-rounded" src="images/omnilingo-screenshot.png" alt="">
+                </a>
+            </div>
+
+            <div class="col-lg-5 col-md-5">
+                <h3>OmniLingo</h3>
+                <h4>Related news in your language</h4>
+
+                <p>OmniLingo is an app to help users discover related news in other languages and was conceived at the hackathon <a href="http://hackaway.com">Hackaway</a> together with <a href="https://twitter.com/anhristova">Ana</a> and <a href="https://twitter.com/pernillan">Pernilla</a>.</p>
+
+                <blockquote>
+                    As news are global, so are user behaviors. You use an easy approach to a problem – and seem to succeed.
+                    <footer>Hackaway judges' verdict</footer>
+                </blockquote>
+
+                <p>The app is built in Django/Python and is deployed on Heroku. It uses articles from <a href="http://omni.se">Omni.se</a> (caveat: articles in the demo are static), translates tags using the <a href="http://api.yandex.com/translate/doc/dg/concepts/api-overview.xml">Yandex translate API</a>, and finds related stories using the <a href="http://developer.feedly.com/">Feedly API</a>.</p>
+
+                <a class="btn btn-primary" href="http://morning-thicket-3487.herokuapp.com/">View Demo<span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="https://github.com/archie/hackaway">View on Github<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+
+        </div>
+
+        <hr>
+        <span id="project-elis" class="anchor"></span>
 
         <div class="row">
 
@@ -239,7 +270,7 @@
 
         <hr>
 
-        <footer>
+        <footer class="copyright">
             <div class="row">
                 <div class="col-lg-12">
                     <p><small>Copyright &copy; MLjungblad 2014</small></p>
